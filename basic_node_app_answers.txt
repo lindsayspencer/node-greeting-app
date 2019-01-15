@@ -1,0 +1,14 @@
+Basic Node App Answers 
+
+1. What is a Node module? 
+
+A Node module is a file that contains coded functions you can export/import into another part of your application to be used. 
+
+2. What is the main difference between `exports` and `module.exports`? 
+
+The main difference is the that you can override the properties of `module.exports` by directly assigning it a value because `module.exports` is a specific object type. This does not happen with `exports` because it is a reference to `module.exports` and it not a specific object type itself.  
+
+
+3. Why is using `exports` recommended?
+
+Using `exports` is recommended because you do not have to always export a specific object type, so you do not run the risk of unintentionally reassigning the value of `module.exports` and losing access to the properties in your application. 
